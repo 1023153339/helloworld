@@ -117,8 +117,25 @@
 # print(text[::-1])#从后往前展示所有值，步长为1
 # text = "sda1"
 # print(text.find("1sdd"))
-#列表
-names = ["zhangsan","lisi","wangwu"]
+# text = " hello Word"
+# print(text.find("e"))#查找text中e的位置
+# print(text.index("h"))#查找text中h的位置
+# print(text.count("o"))#查找text中o的次数
+# print(text.replace("o","e",2))#将text中o替换为e,替换2次
+# print(text.split(" "))#依据空格切分
+# print(text.capitalize())#第一个单词首字母改成大写，其他的小写
+# print(text.title())#所有单词首字母大写
+# print(text.startswith("p"))#判断是否以“p”开头
+# print(text.endswith("d"))#判断是不是以d结尾
+# print(text.lower())#全小写
+# print(text.upper())#全大写
+# print(text.lstrip(" "))#删除左侧空格
+# print(text.rstrip("d"))#删除右侧d
+# print(text.isdigit())#判断text是不是纯数字
+# print("f".join(text))#在每个元素后加上内容
+
+# 列表
+# names = ["zhangsan","lisi","wangwu"]
 # print(names[0])#按坐标查找
 # for name in names:
 # #     print(name)#轮询列举列表内所有元素
@@ -127,9 +144,47 @@ names = ["zhangsan","lisi","wangwu"]
 # for i in range(len):
 #     print(i)#打印各个位置
 #     print(names[i])#使用当前的迭代变量 i 作为索引来从 names 列表中取出一个元素
-len=len(names)
-i=0
-while i<len:
-    print(i)
-    print(names[i])
-    i+=1
+# len=len(names)
+# i=0
+# while i<len:
+#     print(i)
+#     print(names[i])
+# #     i+=1
+# text = ["张三","李四","王五"]
+# a = input("请输入你要找的人")
+# if a in text:#判断在或不在
+#     b = text.index(a)
+#     print(f"{a}存在,位置在第{b+1}位")
+# elif a not in text:
+#     print(f"{a}不在列表中")
+# del text[2]#删除位置
+# print(text)
+# print(text.pop(0))#删除位置
+# print(text.remove("张三"))#删除元素值
+# text = ["张三","李四","王五"]
+# text.sort(reverse=True)#倒叙排列text
+# print(text)
+# 字典
+text = {"姓名": "张三", "年龄": "20", "身高": "160"}
+# print(text["姓名"])#查找键为”姓名“元素
+# print(text.get("姓名的"))#查找键为”姓名的“元素
+# text["姓名"]="hahha"#修改姓名为hahha
+# print(text)
+# del text["年龄"]#删除键为“年龄”的元素
+# print(text)
+# del text#删除字典
+# print(text)
+# text.clear()#删除字典内所有内容
+# print(text)
+# print(len(text))
+# print(text.keys())
+# print(text.values())
+# print(text.items())
+for key in text.keys():
+    print(key)
+for values in text.values():
+        print(values)
+for items in text.items():
+    print(items)
+for value,key in text.items():
+    print(f"key值为{key},对应的键值为{value}")
