@@ -32,6 +32,22 @@
 # class Kokk(Book):
 #     pass
 # kokk=Kokk("fafa","fd")
+# text = ["haha","111"]
+# name = ["张三","李四"]
+# text.append("222")
+# print(text)
+# text.insert(2,"fff")
+# print(text)
+# text.extend(name)
+# print(text)
+# text[2]="fad"
+# print(text)
+# print("ff" in text)
+# text.remove("张三")
+# print(text)
+# text.sort(reverse=False)
+# print(text)
+# tuple=("s","w")
 
 #练习
 class A:
