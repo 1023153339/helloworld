@@ -10,7 +10,8 @@
 #     a.close()
 #输入
 import time
-class IOError(Exception):
-    def __init__(self,len):
-        self.len=len
-    del 
+# class IOError(Exception):
+#     def __init__(self,len):
+#         self.len=len
+#     def __str__(self):
+#         pass
