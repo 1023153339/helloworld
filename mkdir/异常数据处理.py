@@ -11,4 +11,6 @@
 #输入
 import time
 class IOError(Exception):
-    def __init__(self,):
+    def __init__(self,len):
+        self.len=len
+    del 
